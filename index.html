@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <title>My Weather</title>
+</head>
+<body>
+
+<nav class="bg-dark py-3">
+    <div class="d-flex justify-content-between align-items-center container">
+        <div class="mylogo text-white">
+        <h1 class="eatherlogo"><span class="wlogo">W</span>eather</h1>
+        </div>
+        
+        <ul class="d-flex gap-4 list-unstyled mb-0">
+        <li ><a class="text-decoration-none text-white" href="#">Home</a></li>
+        <li><a class="text-decoration-none text-white" href="#">News</a></li>
+        <li><a class="text-decoration-none text-white" href="#">Live Cameras</a></li>
+        <li><a class="text-decoration-none text-white" href="#">Photos</a></li>
+        <li><a class="text-decoration-none text-white" href="#">Contact</a></li>
+        
+        </ul>
+        
+        </div>
+</nav>
+
+<section class="bg-Home min-vh-100">
+
+<div class="container my-input position-relative ">
+<input oninput="searchfunc ()" id="searchlocation" placeholder="Find Your Location..." class="w-100 border-0 py-3 px-4   mt-5  rounded-pill bg-dark text-white" type="text">
+<button id="findbtn" class="bg-primary border-0 rounded-pill px-5 py-2  find-btn text-white">Find</button>
+</div>
+
+<p id="demo"></p>
+<div class="mt-5 row gx-1 container mx-auto gy-2">
+
+
+    <div class="col-lg-4">
+        <div class="myCard">
+            <div class="d-flex justify-content-between  px-3 text-white bg-dark align-items-center py-2 ">
+                <p id="today" class="mb-0">Wednesday</p>
+                <p id="currentDate" class="mb-0">11December</p>
+            
+            
+            
+            </div>
+            <div class="px-3 py-3 text-white">
+            <p id="locationset">Menofiya</p>
+            <h1 id="currenttemp" class="temp-form">13.5 c</h1>
+            <div id="currenticon" class="fs-1"><i class="fa-solid fa-cloud"></i></div>
+            <p id="currentStatus" class="text-warning">fog</p>
+            
+            <div class="d-flex gap-4">
+                <div><i class="fa-solid fa-umbrella me-2"></i>20%</div>
+                <div><i class="fa-solid fa-wind me-2"></i>18km/h</div>
+                <div><i class="fa-solid fa-compass me-2"></i>East</div>
+            </div>
+            
+            </div>
+            
+            
+            </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="myCard">
+
+            <div class="  px-3 text-white   py-2 bg-dark ">
+                <p id="tomorrow" class="mb-0 text-center">Thursday</p>
+            
+            </div>
+            
+            <div class="px-3 py-3 text-white text-center">
+            
+                <div id="bokraicon" class="fs-1 "><i class="fa-solid fa-cloud"></i></div>
+            
+            <h1 id="bokraHighTemp" class="my-3" >23.5 c</h1>
+            <h6 id="bokraLowTemp" >10.2 c</h6>
+            <p id="bokraStatus" class="text-warning mt-5">fog</p>
+            
+            
+            
+            </div>
+            
+            
+            </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="myCard">
+
+            <div class="  px-3 text-white bg-dark  py-2 ">
+                <p id="afterTomorrow" class="mb-0 text-center">Friday</p>
+            
+            </div>
+            
+            <div class="px-3 py-3 text-white text-center">
+            
+                <div id="aftericon" class="fs-1 "><i class="fa-solid fa-cloud"></i></div>
+            
+            <h1 id="afterHighTemp" class="my-3" >23.5 c</h1>
+            <h6 id="afterLowTemp" >10.2 c</h6>
+            <p id="afterStatus" class="text-warning mt-5">fog</p>
+            
+            
+            
+            </div>
+            
+            
+            </div>
+            
+    </div>
+
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+<footer class="bg-dark py-5">
+
+
+    <div >
+    <input class="rounded-pill" placeholder="Enter Your Email To Subscribe..." type="text">
+    
+    </div>
+    
+    
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.bg-Home{
+
+background-image: url(images/skyscrapers-sunset.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+
+}
+.my-input{
+
+    border-top: 1px solid transparent;
+    
+}
+
+
+
+.my-input::placeholder{
+
+    color: rgb(143, 26, 26);
+    opacity: .8 !important;
+    }
+
+    .find-btn{
+
+        position: absolute;
+      bottom: 8px;
+        right: 20px ;
+    }
+    .width-div{
+
+        width: 30%;
+    }
+
+    .temp-form{
+
+        font-size: 75px;
+    }
+
+    .myCard{
+
+        background-color: rgba(0, 0, 0, 0.733);
+        min-height: 350px;
+        border: 1px solid rgba(255, 255, 255, 0.582);
+    }
+    .wlogo{
+
+        color: gold !important;
+        font-size: 60px !important;
+        font-family: cursive;
+    }
+    .eatherlogo{
+
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', 'Times New Roman', Times, serif;
+    }
